@@ -1,6 +1,6 @@
-package com.learning.employeerestdemo.Interface;
+package com.learning.employeeUI.Interface;
 
-import com.learning.employeerestdemo.Model.Employee;
+import com.learning.employeeUI.Model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

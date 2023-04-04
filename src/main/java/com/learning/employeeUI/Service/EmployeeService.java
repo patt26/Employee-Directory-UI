@@ -1,8 +1,8 @@
-package com.learning.employeerestdemo.Service;
+package com.learning.employeeUI.Service;
 
 
-import com.learning.employeerestdemo.Interface.EmployeeRepository;
-import com.learning.employeerestdemo.Model.Employee;
+import com.learning.employeeUI.Interface.EmployeeRepository;
+import com.learning.employeeUI.Model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;

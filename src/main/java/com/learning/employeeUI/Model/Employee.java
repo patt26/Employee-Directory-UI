@@ -1,6 +1,9 @@
-package com.learning.employeerestdemo.Model;
+package com.learning.employeeUI.Model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "employee")
@@ -10,12 +13,17 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @NotEmpty(message = "is Required")
+    @Size(min = 3)
     @Column(name = "first_name")
     private String firstName;
 
+    @NotEmpty(message = "is Required")
+    @Size(min = 1)
     @Column(name = "last_name")
     private String lastName;
 
+    @Email
     @Column(name = "email")
     private String email;
 
